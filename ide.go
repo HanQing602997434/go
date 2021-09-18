@@ -13,5 +13,12 @@
 		版本选择：
 			go1.17.1.windows-amd64.zip
 
-		
+		配置环境变量：
+			GOROOT：指定skd的安装路径 E:\Go\sdk\go
+
+			Path：添加sdk的/bin目录
+
+			GOPATH：工作目录
+
+			配置完环境变量需要重启dos，才能在任意目录查看go version
 */
