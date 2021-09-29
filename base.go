@@ -59,4 +59,10 @@
 		cd \：去根目录
 		rd：删除空目录
 		rd /q/s：不用询问删除目录
+		echo hello > d:\abc.txt：向d盘abc.txt文件写入hello，没有abc.txt则创建
+		copy d:\abc.txt f:\：将d盘abc.txt文件拷贝到f盘
+		move d:\abc.txt f:\：将d盘abc.txt文件移动到f盘
+		del d:\abc.txt：删除d盘abc.txt文件
+		cls：清屏
+		exit：退出 
 */
