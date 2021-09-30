@@ -106,4 +106,34 @@
 					7）接口（interface）
 
 					8）map
+
+		6.基本数据类型的转换
+			Golang和java/c不同，Go在不同类型的变量之间赋值需要显示转换。也就是说Golang中数据类型不能自动转换
+
+			基本语法：
+				表达式T(v)将值v转换成类型T
+
+			细节：
+				被转换的是变量存储的数据（即值），变量本身的数据类型并没有改变
+				一个很大的值转换成很小的类型，结果是按溢出处理
+
+		7.基本数据类型转换为string
+			fmt.Sprintf()根据format参数生成格式化的字符串并返回该字符串
+				int转string：str := fmt.Sprintf("%d", num1)
+				float64转string：str = fmt.Sprintf("%f", num2)
+				bool转string：str = fmt.Sprintf("%t", b)
+				byte转string：str = fmt.Sprintf("%c", myChar)
+
+			strconv.FormatInt()利用strconv包里的转换函数
+				int转string：str = strconv.FormatInt(int64(num1), 10)
+				float64转string：str = strconv.FormatFloat(num2, 'f', 10, 64)
+				bool转string：str = strconv.FormatBool(b)
+
+		8.string类型转换基本数据类型
+			使用strconv包的函数
+				string转bool：b, _ = strconv.ParseBool(str)
+				string转int64：n1, _ = strconv.ParseInt(str2, 10, 64)
+				string转float64：f1, _ = strconv.ParseFloat(str3, 64)
+			
+			string转基本数据类型如果不成功就将其转换为默认值
 */
