@@ -62,6 +62,15 @@
 						4）case后面如果是常量值，要求不能重复
 						5）case后面不需要带break，程序匹配到一个case后就会执行对应的代码块，然后退出switch，如果一个都匹配不到，则执行default
 						6）default语句不是必须有的
+						7）switch后也可以不带表达式，类似if-else分支来使用
+						8）switch后也可以直接声明/定义一个变量，分号结束，不推荐
+						9）switch穿透-fallthrough，如果在case语句块后增加fallthrough，则会继续执行下一个case，也叫switch穿透，只能穿透一层
+						10）Type Switch: switch语句还可以被用于type-switch来判断某个interface变量中实际指向的变量类型
+
+				6）switch和if的比较
+					1）如果判断的具体数值不多，而且符合整数、浮点数、字符、字符串这几种类型。建议使用switch语句，简洁高效。
+					
+					2）其他情况：对区间判断和结果为bool类型的判断，使用if，if的使用范围更广。
 
 		3.循环控制
-*/
+*/ 	
