@@ -32,4 +32,10 @@
 					// 循环执行语句
 				}
 				死循环
+
+			4)for-range
+
+				for index, val := range str {
+				}
+				使用的是字符的方式遍历
 */
