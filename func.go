@@ -56,7 +56,7 @@
 		9）函数既然是一种数据类型，因此在Go中，函数可以作为形参，并且调用
 		10）为了简化数据类型定义，Go支持自定义数据类型
 			基本语法：type 自定义数据类型名 数据类型 // 理解：相当于一个别名
-			案例：type myInt int // 这时myInt就等价int来使用了	
+			案例：type myInt int // 这时myInt就等价int来使用了
 			案例：type mySum func(int, int) int // 这时mySum就等价一个函数类型func(int, int) int
 		11）支持对函数返回值命名
 			func cal(n1 int, n2 int) (sum int, sub int) {
@@ -64,4 +64,11 @@
 				sub = n1 - n2
 				return
 			}
+		12）使用 _ 标识符，忽略返回值
+		13）Go支持可变参数，可变参数必须放在形参列表的最后
+			1.支持0到多个参数
+				func sum(args... int) sum int { }
+			2.支持1到多个参数
+				func sum(n1 int, args... int) sum int { }
+		14）如果形参的类型是一样的，则前面参数的类型可以省略，类似func sum(n1, n2 float32) float32 { }
 */	
