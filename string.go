@@ -24,4 +24,25 @@
 		10.不区分大小写的字符串比较（==是区分字母大小写）strings.EqualFold("abc", "Abc")
 
 		11.返回子串在字符串第一次出现的index值，如果没有返回-1 strings.Index("NLT_abc", "abc")
+
+		12.返回子串在字符串最后一次出现的index，如没有返回-1 strings.LastIndex("go golang", "go")
+
+		13.将指定的子串替换成另外一个子串 strings.Replace("go go hello", "go", "go语言", n) n可以
+		指定你希望替换几个，如果 n = -1 表示全部替换
+
+		14.按照指定的某个字符，为分割标识，将一个字符串拆分成字符串数组 strings.Split("hello,world,ok", ",")
+
+		15.将字符串的字母进行大小写的转换 strings.ToLower("Go") strings.ToUpper("Go")
+
+		16.将字符串左右两边的空格去掉 strings.TrimSpace("tn a lone gopher ntm   ")
+
+		17.将字符串左右两边指定的字符去掉 strings.Trim("!hello!", "!")
+
+		18.将字符串左边指定的字符去掉 strings.TrimLeft("!hello!", "!")
+
+		19.将字符串右边指定的字符去掉 strings.TrimRight("!hello!", "!")
+
+		20.判断字符串是否以指定的字符串开头 strings.HasPrefix("ftp://192.168.0.1", "ftp")
+
+		21.判断字符串是否以指定的字符串结尾 strings.HasSuffix("NTL_abc.jpg", "abc")
 */
