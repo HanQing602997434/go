@@ -37,5 +37,8 @@
 			)
 
 		7.休眠
-		func Sleep(d Duration)
+			time.Sleep(d Duration)
+			只能传入整数，不能传入小数
+
+		8.获取当前unix时间戳和unixnano时间戳。（作用是可以获取随机数字）
 */
