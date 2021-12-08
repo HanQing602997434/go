@@ -47,15 +47,20 @@
 			4.不同结构体变量的字段是独立的，互不影响，一个结构体变量字段的更改，不影响另外一个，结构体是值类型
 
 	创建结构体实例的四种方式
-		方式一：
+		方式1：
 			var p1 Person
 
-		方式二：
+		方式2：
 			p2 := Person{"mary", 20}
 
-		方式三：
+		方式3-&：
 			var p3 *Person = new(Person)
 			因为p3是一个指针，因此标准的给字段赋值方式：(*p3).Name = "smith"
 			也可以这样写p3.Name = "smith"，原因：go的设计者为了程序员更加方便，底层会对p3.Name = "smith"进行处理，
 			会给p3加上取值运算(*p3).Name = "smith"
+
+		方式4-{}：
+			var p4 *Person = &Person{"mary", 60}
+			因为p4是一个指针，因此标准的访问字段的方法：(*p4).Name = "scott"
+			go的设计者为了程序员使用方便，也可以p4.Name = "scott"
 */
