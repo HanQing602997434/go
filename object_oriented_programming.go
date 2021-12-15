@@ -14,15 +14,29 @@
 
 			stu2 := Student{"tom", 10}
 
+			// 在创建结构体变量时，把字段名和字段值写在一起，这种写法，就不依赖字段的定义顺序
 			var stu3 Student = Student{
 				Name : "mary",
 				Age : 30,
 			}
 
 			stu4 := Student{
-				Name : "mary",
 				Age : 20,
+				Name : "mary",
 			}
 
-		方式2：
+		方式2：返回结构体的指针类型(!!!)
+			var stu5 = &Stu("小王", 29)
+			stu6 := &Stu("小王~", 39)
+
+			// 在创建结构体指针变量时，把字段名和字段值写在一起，这种写法，就不依赖字段的定义顺序
+			var stu7 = &Stu{
+				Name : "小李"，
+				Age : 49,
+			}
+			
+			stu8 := &Stu{
+				Age : 59,
+				Name : "小李~",
+			}
 */
